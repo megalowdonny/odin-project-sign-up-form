@@ -20,6 +20,7 @@ body {
 main {
   display: flex;
   height: 100vh;
+  color: rgb(235, 235, 235);
 }
 
 input, label {
@@ -32,14 +33,23 @@ a {
 
 .container {
   min-height: 100%;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 .left {
   flex: 1;
+  position: relative;
   background-image: url(images/forest.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   opacity: 0.9;
+}
+
+.photo-cite {
+  position: absolute;
+  width: 100%;
+  bottom: 10px;
+  text-align: center;
 }
 
 .right {
@@ -48,8 +58,6 @@ a {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  color: rgb(235, 235, 235);
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 .logo {
@@ -62,7 +70,6 @@ a {
   gap: 10px;
   font-family: odin;
   font-size: 110px;
-  color: white;
 }
 
 .section {

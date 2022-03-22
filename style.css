@@ -1,0 +1,126 @@
+@font-face {
+  font-family: odin;
+  src: url(Norse-Bold.otf);
+}
+
+:root {
+  --logo-background: rgba(0, 0, 0, 0.836);
+  --right-background: rgba(0, 0, 0, 0.95);
+  --form-background: rgba(49, 49, 49, 0.95); 
+  --button-background: rgba(19, 26, 23, 0.733); 
+  --link-color: rgb(166, 255, 200);
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+main {
+  display: flex;
+  height: 100vh;
+}
+
+input, label {
+  display: block;
+}
+
+a {
+  color: var(--link-color);
+}
+
+.container {
+  min-height: 100%;
+}
+
+.left {
+  flex: 1;
+  background-image: url(images/forest.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  opacity: 0.9;
+}
+
+.right {
+  flex: 2;
+  background-color: var(--right-background);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  color: rgb(235, 235, 235);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.logo {
+  background-color: var(--logo-background);
+  margin-top: calc(100vh / 5);
+  padding: 20px 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  font-family: odin;
+  font-size: 110px;
+  color: white;
+}
+
+.section {
+  padding-left: 60px;
+  padding-right: 200px;
+}
+
+.upper {
+  font-size: 28px;
+  padding-bottom: 20px;
+}
+
+.middle {
+  background-color: var(--form-background);
+  box-shadow: 0 2px black;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.middle h2 {
+  margin-bottom: 20px;
+}
+
+.bottom {
+  padding-top: 60px;
+}
+
+.button {
+  font-family: inherit;
+  font-size: 100%;
+  border: 0;
+  padding: 10px 40px;
+  border-radius: 8px;
+  background-color: var(--button-background);
+  color: white;
+}
+
+#main-form {
+  padding-bottom: 30px;
+}
+
+#main-form tr {
+  width: 300px;
+}
+
+#main-form td {
+  padding-right: 100px;
+}
+
+#main-form tr:not(:last-child) td {
+  padding-bottom: 10px;
+}
+
+#main-form label {
+  padding-bottom: 5px;
+}
+
+#main-form input {
+  width: 300px;
+  height: 2em;
+}

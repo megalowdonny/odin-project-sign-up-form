@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Sign-Up Page</title>
+</head>
+<body>
+  <main>
+    <div class="container left">
+      <div class="logo">
+        <img src="images/odin-lined.png" alt="Odin" height='150px'>
+        <span>ODIN</span>
+      </div>
+    </div>
+
+    <div class="container right">
+      <div class='section upper'>
+        <p>This is not a real form! But it is a wakeup call! You are in a coma! The last 30 years of your life have been taking place entirely within your dream! Wake up!</p>
+        <p style='font-style: italic; font-weight: bold;'>SERIOUSLY WAKE UP</p>
+      </div>
+
+      <div class="section middle">
+        <h2>Let's do this!</h2>
+        <table id='main-form'>
+          <form id='form1'>
+            <tr>
+              <td>
+                <label for="firstname">First Name</label>
+                <input type="text" id='firstname'>
+              </td>
+              <td>
+                <label for="lastname">Last Name</label>
+                <input type="text" id='lastname'>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <label for="email">Email</label>
+                <input type="email" id='email'>
+              </td>
+              <td>
+                <label for="phone">Phone Number</label>
+                <input type="tel" id='phone'>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <label for="pword">Password</label>
+                <input type="password" id='pword'>
+              </td>
+              <td>
+                <label for="confirmpword">Confirm Password</label>
+                <input type="password" id='confirmpword'>
+              </td>
+            </tr>
+          </form>
+        </table>
+      </div>
+      <div class="section bottom">
+        <button form='form1' type='submit' class='button'>Create Account</button>
+        <p>Already have an account? <a href=''>Log in</a></p>
+      </div>
+    </div>
+  </main>
+</body>
+</html>

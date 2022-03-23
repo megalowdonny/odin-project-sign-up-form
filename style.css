@@ -25,6 +25,7 @@ main {
 
 input, label {
   display: block;
+  outline: none;
 }
 
 a {
@@ -130,4 +131,13 @@ a {
 #main-form input {
   width: 300px;
   height: 2em;
+  border: 1px solid grey;
+}
+
+#main-form input.error {
+  border: 1px solid red;
+}
+
+#main-form input:focus {
+  border: 1px solid rgb(27, 190, 82);
 }
